@@ -1,0 +1,10 @@
+C:\Users\lispi\source\repos\Zork Builder\Zork Builder\bin\Debug\Zork Builder.exe.config
+C:\Users\lispi\source\repos\Zork Builder\Zork Builder\bin\Debug\Zork Builder.exe
+C:\Users\lispi\source\repos\Zork Builder\Zork Builder\bin\Debug\Zork Builder.pdb
+C:\Users\lispi\source\repos\Zork Builder\Zork Builder\obj\Debug\Zork Builder.csproj.AssemblyReference.cache
+C:\Users\lispi\source\repos\Zork Builder\Zork Builder\obj\Debug\Zork_Builder.ZorkBuilder.resources
+C:\Users\lispi\source\repos\Zork Builder\Zork Builder\obj\Debug\Zork_Builder.Properties.Resources.resources
+C:\Users\lispi\source\repos\Zork Builder\Zork Builder\obj\Debug\Zork Builder.csproj.GenerateResource.cache
+C:\Users\lispi\source\repos\Zork Builder\Zork Builder\obj\Debug\Zork Builder.csproj.CoreCompileInputs.cache
+C:\Users\lispi\source\repos\Zork Builder\Zork Builder\obj\Debug\Zork Builder.exe
+C:\Users\lispi\source\repos\Zork Builder\Zork Builder\obj\Debug\Zork Builder.pdb
