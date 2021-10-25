@@ -33,32 +33,43 @@ namespace Zork_Builder
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.runToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.runToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuTabs = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.RoomsLabel = new System.Windows.Forms.Label();
-            this.NameLabel = new System.Windows.Forms.Label();
-            this.DescriptionLabel = new System.Windows.Forms.Label();
-            this.NeighborsLabel = new System.Windows.Forms.Label();
-            this.DescriptionText = new System.Windows.Forms.RichTextBox();
-            this.NameText = new System.Windows.Forms.TextBox();
-            this.NorthLable = new System.Windows.Forms.Label();
-            this.SouthLabel = new System.Windows.Forms.Label();
-            this.EastLabel = new System.Windows.Forms.Label();
-            this.WestLabel = new System.Windows.Forms.Label();
-            this.AddButton = new System.Windows.Forms.Button();
             this.DeleteButton = new System.Windows.Forms.Button();
+            this.AddButton = new System.Windows.Forms.Button();
+            this.WestLabel = new System.Windows.Forms.Label();
+            this.EastLabel = new System.Windows.Forms.Label();
+            this.SouthLabel = new System.Windows.Forms.Label();
+            this.NorthLable = new System.Windows.Forms.Label();
+            this.NameText = new System.Windows.Forms.TextBox();
+            this.DescriptionText = new System.Windows.Forms.RichTextBox();
+            this.NeighborsLabel = new System.Windows.Forms.Label();
+            this.DescriptionLabel = new System.Windows.Forms.Label();
+            this.NameLabel = new System.Windows.Forms.Label();
+            this.RoomsLabel = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.EastDropBox = new System.Windows.Forms.ComboBox();
+            this.WestDropBox = new System.Windows.Forms.ComboBox();
+            this.NorthDropBox = new System.Windows.Forms.ComboBox();
+            this.SouthDropBox = new System.Windows.Forms.ComboBox();
+            this.StartingLocationLabel = new System.Windows.Forms.Label();
+            this.WelcomeMessage = new System.Windows.Forms.Label();
+            this.ExitMessage = new System.Windows.Forms.Label();
+            this.ExitMessageTextBox = new System.Windows.Forms.TextBox();
+            this.WelcomeMessageTextBox = new System.Windows.Forms.TextBox();
+            this.StartingLocationDropDown = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.MenuTabs.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -92,15 +103,45 @@ namespace Zork_Builder
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.newToolStripMenuItem.Text = "&New...";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.openToolStripMenuItem.Text = "&Open...";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.saveToolStripMenuItem.Text = "&Save";
+            // 
+            // saveAsToolStripMenuItem
+            // 
+            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.saveAsToolStripMenuItem.Text = "Save As...";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(152, 6);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // runToolStripMenuItem
             // 
@@ -114,37 +155,6 @@ namespace Zork_Builder
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
-            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
-            // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.saveToolStripMenuItem.Text = "&Save";
-            // 
-            // saveAsToolStripMenuItem
-            // 
-            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.saveAsToolStripMenuItem.Text = "Save As...";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.exitToolStripMenuItem.Text = "E&xit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
             // MenuTabs
             // 
             this.MenuTabs.Controls.Add(this.tabPage1);
@@ -157,6 +167,10 @@ namespace Zork_Builder
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.SouthDropBox);
+            this.tabPage1.Controls.Add(this.NorthDropBox);
+            this.tabPage1.Controls.Add(this.WestDropBox);
+            this.tabPage1.Controls.Add(this.EastDropBox);
             this.tabPage1.Controls.Add(this.DeleteButton);
             this.tabPage1.Controls.Add(this.AddButton);
             this.tabPage1.Controls.Add(this.WestLabel);
@@ -178,93 +192,45 @@ namespace Zork_Builder
             this.tabPage1.Text = "Rooms";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // DeleteButton
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(533, 469);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Extras";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.DeleteButton.Location = new System.Drawing.Point(127, 432);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Size = new System.Drawing.Size(75, 23);
+            this.DeleteButton.TabIndex = 13;
+            this.DeleteButton.Text = "&Delete";
+            this.DeleteButton.UseVisualStyleBackColor = true;
             // 
-            // listBox1
+            // AddButton
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(4, 32);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(198, 394);
-            this.listBox1.TabIndex = 0;
+            this.AddButton.Location = new System.Drawing.Point(4, 432);
+            this.AddButton.Name = "AddButton";
+            this.AddButton.Size = new System.Drawing.Size(75, 23);
+            this.AddButton.TabIndex = 12;
+            this.AddButton.Text = "&Add";
+            this.AddButton.UseVisualStyleBackColor = true;
             // 
-            // RoomsLabel
+            // WestLabel
             // 
-            this.RoomsLabel.AutoSize = true;
-            this.RoomsLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RoomsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.RoomsLabel.Location = new System.Drawing.Point(7, 7);
-            this.RoomsLabel.Name = "RoomsLabel";
-            this.RoomsLabel.Size = new System.Drawing.Size(58, 19);
-            this.RoomsLabel.TabIndex = 2;
-            this.RoomsLabel.Text = "Rooms:";
+            this.WestLabel.AutoSize = true;
+            this.WestLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.WestLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.WestLabel.Location = new System.Drawing.Point(443, 321);
+            this.WestLabel.Name = "WestLabel";
+            this.WestLabel.Size = new System.Drawing.Size(42, 19);
+            this.WestLabel.TabIndex = 11;
+            this.WestLabel.Text = "West";
             // 
-            // NameLabel
+            // EastLabel
             // 
-            this.NameLabel.AutoSize = true;
-            this.NameLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.NameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.NameLabel.Location = new System.Drawing.Point(208, 32);
-            this.NameLabel.Name = "NameLabel";
-            this.NameLabel.Size = new System.Drawing.Size(51, 19);
-            this.NameLabel.TabIndex = 3;
-            this.NameLabel.Text = "Name:";
-            // 
-            // DescriptionLabel
-            // 
-            this.DescriptionLabel.AutoSize = true;
-            this.DescriptionLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DescriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.DescriptionLabel.Location = new System.Drawing.Point(208, 78);
-            this.DescriptionLabel.Name = "DescriptionLabel";
-            this.DescriptionLabel.Size = new System.Drawing.Size(85, 19);
-            this.DescriptionLabel.TabIndex = 4;
-            this.DescriptionLabel.Text = "Description:";
-            // 
-            // NeighborsLabel
-            // 
-            this.NeighborsLabel.AutoSize = true;
-            this.NeighborsLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.NeighborsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.NeighborsLabel.Location = new System.Drawing.Point(335, 218);
-            this.NeighborsLabel.Name = "NeighborsLabel";
-            this.NeighborsLabel.Size = new System.Drawing.Size(79, 19);
-            this.NeighborsLabel.TabIndex = 5;
-            this.NeighborsLabel.Text = "Neighbors:";
-            // 
-            // DescriptionText
-            // 
-            this.DescriptionText.Location = new System.Drawing.Point(208, 98);
-            this.DescriptionText.Name = "DescriptionText";
-            this.DescriptionText.Size = new System.Drawing.Size(319, 108);
-            this.DescriptionText.TabIndex = 6;
-            this.DescriptionText.Text = "";
-            // 
-            // NameText
-            // 
-            this.NameText.Location = new System.Drawing.Point(211, 55);
-            this.NameText.Name = "NameText";
-            this.NameText.Size = new System.Drawing.Size(201, 20);
-            this.NameText.TabIndex = 7;
-            // 
-            // NorthLable
-            // 
-            this.NorthLable.AutoSize = true;
-            this.NorthLable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.NorthLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.NorthLable.Location = new System.Drawing.Point(350, 259);
-            this.NorthLable.Name = "NorthLable";
-            this.NorthLable.Size = new System.Drawing.Size(45, 19);
-            this.NorthLable.TabIndex = 8;
-            this.NorthLable.Text = "North";
+            this.EastLabel.AutoSize = true;
+            this.EastLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EastLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.EastLabel.Location = new System.Drawing.Point(255, 321);
+            this.EastLabel.Name = "EastLabel";
+            this.EastLabel.Size = new System.Drawing.Size(38, 19);
+            this.EastLabel.TabIndex = 10;
+            this.EastLabel.Text = "East";
             // 
             // SouthLabel
             // 
@@ -277,45 +243,186 @@ namespace Zork_Builder
             this.SouthLabel.TabIndex = 9;
             this.SouthLabel.Text = "South";
             // 
-            // EastLabel
+            // NorthLable
             // 
-            this.EastLabel.AutoSize = true;
-            this.EastLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.EastLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.EastLabel.Location = new System.Drawing.Point(255, 301);
-            this.EastLabel.Name = "EastLabel";
-            this.EastLabel.Size = new System.Drawing.Size(38, 19);
-            this.EastLabel.TabIndex = 10;
-            this.EastLabel.Text = "East";
+            this.NorthLable.AutoSize = true;
+            this.NorthLable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.NorthLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.NorthLable.Location = new System.Drawing.Point(350, 259);
+            this.NorthLable.Name = "NorthLable";
+            this.NorthLable.Size = new System.Drawing.Size(45, 19);
+            this.NorthLable.TabIndex = 8;
+            this.NorthLable.Text = "North";
             // 
-            // WestLabel
+            // NameText
             // 
-            this.WestLabel.AutoSize = true;
-            this.WestLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.WestLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.WestLabel.Location = new System.Drawing.Point(445, 301);
-            this.WestLabel.Name = "WestLabel";
-            this.WestLabel.Size = new System.Drawing.Size(42, 19);
-            this.WestLabel.TabIndex = 11;
-            this.WestLabel.Text = "West";
+            this.NameText.Location = new System.Drawing.Point(211, 55);
+            this.NameText.Name = "NameText";
+            this.NameText.Size = new System.Drawing.Size(201, 20);
+            this.NameText.TabIndex = 7;
             // 
-            // AddButton
+            // DescriptionText
             // 
-            this.AddButton.Location = new System.Drawing.Point(4, 432);
-            this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(75, 23);
-            this.AddButton.TabIndex = 12;
-            this.AddButton.Text = "&Add";
-            this.AddButton.UseVisualStyleBackColor = true;
+            this.DescriptionText.Location = new System.Drawing.Point(208, 98);
+            this.DescriptionText.Name = "DescriptionText";
+            this.DescriptionText.Size = new System.Drawing.Size(319, 108);
+            this.DescriptionText.TabIndex = 6;
+            this.DescriptionText.Text = "";
             // 
-            // DeleteButton
+            // NeighborsLabel
             // 
-            this.DeleteButton.Location = new System.Drawing.Point(127, 432);
-            this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(75, 23);
-            this.DeleteButton.TabIndex = 13;
-            this.DeleteButton.Text = "&Delete";
-            this.DeleteButton.UseVisualStyleBackColor = true;
+            this.NeighborsLabel.AutoSize = true;
+            this.NeighborsLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.NeighborsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.NeighborsLabel.Location = new System.Drawing.Point(335, 218);
+            this.NeighborsLabel.Name = "NeighborsLabel";
+            this.NeighborsLabel.Size = new System.Drawing.Size(79, 19);
+            this.NeighborsLabel.TabIndex = 5;
+            this.NeighborsLabel.Text = "Neighbors:";
+            // 
+            // DescriptionLabel
+            // 
+            this.DescriptionLabel.AutoSize = true;
+            this.DescriptionLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DescriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.DescriptionLabel.Location = new System.Drawing.Point(208, 78);
+            this.DescriptionLabel.Name = "DescriptionLabel";
+            this.DescriptionLabel.Size = new System.Drawing.Size(85, 19);
+            this.DescriptionLabel.TabIndex = 4;
+            this.DescriptionLabel.Text = "Description:";
+            // 
+            // NameLabel
+            // 
+            this.NameLabel.AutoSize = true;
+            this.NameLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.NameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.NameLabel.Location = new System.Drawing.Point(208, 32);
+            this.NameLabel.Name = "NameLabel";
+            this.NameLabel.Size = new System.Drawing.Size(51, 19);
+            this.NameLabel.TabIndex = 3;
+            this.NameLabel.Text = "Name:";
+            // 
+            // RoomsLabel
+            // 
+            this.RoomsLabel.AutoSize = true;
+            this.RoomsLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RoomsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.RoomsLabel.Location = new System.Drawing.Point(7, 7);
+            this.RoomsLabel.Name = "RoomsLabel";
+            this.RoomsLabel.Size = new System.Drawing.Size(58, 19);
+            this.RoomsLabel.TabIndex = 2;
+            this.RoomsLabel.Text = "Rooms:";
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(4, 32);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(198, 394);
+            this.listBox1.TabIndex = 0;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.StartingLocationDropDown);
+            this.tabPage2.Controls.Add(this.WelcomeMessageTextBox);
+            this.tabPage2.Controls.Add(this.ExitMessageTextBox);
+            this.tabPage2.Controls.Add(this.ExitMessage);
+            this.tabPage2.Controls.Add(this.WelcomeMessage);
+            this.tabPage2.Controls.Add(this.StartingLocationLabel);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(533, 469);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Extras";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // EastDropBox
+            // 
+            this.EastDropBox.FormattingEnabled = true;
+            this.EastDropBox.Location = new System.Drawing.Point(211, 352);
+            this.EastDropBox.Name = "EastDropBox";
+            this.EastDropBox.Size = new System.Drawing.Size(121, 21);
+            this.EastDropBox.TabIndex = 14;
+            // 
+            // WestDropBox
+            // 
+            this.WestDropBox.FormattingEnabled = true;
+            this.WestDropBox.Location = new System.Drawing.Point(402, 352);
+            this.WestDropBox.Name = "WestDropBox";
+            this.WestDropBox.Size = new System.Drawing.Size(121, 21);
+            this.WestDropBox.TabIndex = 15;
+            // 
+            // NorthDropBox
+            // 
+            this.NorthDropBox.FormattingEnabled = true;
+            this.NorthDropBox.Location = new System.Drawing.Point(308, 290);
+            this.NorthDropBox.Name = "NorthDropBox";
+            this.NorthDropBox.Size = new System.Drawing.Size(121, 21);
+            this.NorthDropBox.TabIndex = 16;
+            // 
+            // SouthDropBox
+            // 
+            this.SouthDropBox.FormattingEnabled = true;
+            this.SouthDropBox.Location = new System.Drawing.Point(308, 414);
+            this.SouthDropBox.Name = "SouthDropBox";
+            this.SouthDropBox.Size = new System.Drawing.Size(121, 21);
+            this.SouthDropBox.TabIndex = 17;
+            // 
+            // StartingLocationLabel
+            // 
+            this.StartingLocationLabel.AutoSize = true;
+            this.StartingLocationLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.StartingLocationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.StartingLocationLabel.Location = new System.Drawing.Point(8, 15);
+            this.StartingLocationLabel.Name = "StartingLocationLabel";
+            this.StartingLocationLabel.Size = new System.Drawing.Size(121, 19);
+            this.StartingLocationLabel.TabIndex = 3;
+            this.StartingLocationLabel.Text = "Starting Location:";
+            // 
+            // WelcomeMessage
+            // 
+            this.WelcomeMessage.AutoSize = true;
+            this.WelcomeMessage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.WelcomeMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.WelcomeMessage.Location = new System.Drawing.Point(8, 90);
+            this.WelcomeMessage.Name = "WelcomeMessage";
+            this.WelcomeMessage.Size = new System.Drawing.Size(133, 19);
+            this.WelcomeMessage.TabIndex = 4;
+            this.WelcomeMessage.Text = "Welcome Message:";
+            // 
+            // ExitMessage
+            // 
+            this.ExitMessage.AutoSize = true;
+            this.ExitMessage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ExitMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ExitMessage.Location = new System.Drawing.Point(8, 173);
+            this.ExitMessage.Name = "ExitMessage";
+            this.ExitMessage.Size = new System.Drawing.Size(97, 19);
+            this.ExitMessage.TabIndex = 5;
+            this.ExitMessage.Text = "Exit Message:";
+            // 
+            // ExitMessageTextBox
+            // 
+            this.ExitMessageTextBox.Location = new System.Drawing.Point(8, 207);
+            this.ExitMessageTextBox.Name = "ExitMessageTextBox";
+            this.ExitMessageTextBox.Size = new System.Drawing.Size(201, 20);
+            this.ExitMessageTextBox.TabIndex = 8;
+            // 
+            // WelcomeMessageTextBox
+            // 
+            this.WelcomeMessageTextBox.Location = new System.Drawing.Point(8, 125);
+            this.WelcomeMessageTextBox.Name = "WelcomeMessageTextBox";
+            this.WelcomeMessageTextBox.Size = new System.Drawing.Size(201, 20);
+            this.WelcomeMessageTextBox.TabIndex = 9;
+            // 
+            // StartingLocationDropDown
+            // 
+            this.StartingLocationDropDown.FormattingEnabled = true;
+            this.StartingLocationDropDown.Location = new System.Drawing.Point(8, 48);
+            this.StartingLocationDropDown.Name = "StartingLocationDropDown";
+            this.StartingLocationDropDown.Size = new System.Drawing.Size(201, 21);
+            this.StartingLocationDropDown.TabIndex = 15;
             // 
             // ZorkBuilder
             // 
@@ -328,12 +435,13 @@ namespace Zork_Builder
             this.MaximizeBox = false;
             this.Name = "ZorkBuilder";
             this.Text = "Zork Builder";
-            this.Load += new System.EventHandler(this.ZorkBuilder_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.MenuTabs.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -368,6 +476,16 @@ namespace Zork_Builder
         private System.Windows.Forms.Label NorthLable;
         private System.Windows.Forms.Button DeleteButton;
         private System.Windows.Forms.Button AddButton;
+        private System.Windows.Forms.ComboBox SouthDropBox;
+        private System.Windows.Forms.ComboBox NorthDropBox;
+        private System.Windows.Forms.ComboBox WestDropBox;
+        private System.Windows.Forms.ComboBox EastDropBox;
+        private System.Windows.Forms.ComboBox StartingLocationDropDown;
+        private System.Windows.Forms.TextBox WelcomeMessageTextBox;
+        private System.Windows.Forms.TextBox ExitMessageTextBox;
+        private System.Windows.Forms.Label ExitMessage;
+        private System.Windows.Forms.Label WelcomeMessage;
+        private System.Windows.Forms.Label StartingLocationLabel;
     }
 }
 
