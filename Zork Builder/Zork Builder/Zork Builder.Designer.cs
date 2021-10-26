@@ -60,22 +60,23 @@ namespace Zork_Builder
             this.RoomsLabel = new System.Windows.Forms.Label();
             this.RoomsList = new System.Windows.Forms.ListBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.ItemScoreLable = new System.Windows.Forms.Label();
+            this.ItemDescriptionText = new System.Windows.Forms.RichTextBox();
+            this.ItemDescription = new System.Windows.Forms.Label();
+            this.ItemNameText = new System.Windows.Forms.TextBox();
+            this.ItemName = new System.Windows.Forms.Label();
+            this.ItemDeleteButton = new System.Windows.Forms.Button();
+            this.ItemAddButton = new System.Windows.Forms.Button();
+            this.ItemsList = new System.Windows.Forms.ListBox();
+            this.ItemLabel = new System.Windows.Forms.Label();
             this.StartingLocationDropDown = new System.Windows.Forms.ComboBox();
             this.WelcomeMessageTextBox = new System.Windows.Forms.TextBox();
             this.ExitMessageTextBox = new System.Windows.Forms.TextBox();
             this.ExitMessage = new System.Windows.Forms.Label();
             this.WelcomeMessage = new System.Windows.Forms.Label();
             this.StartingLocationLabel = new System.Windows.Forms.Label();
-            this.ItemLabel = new System.Windows.Forms.Label();
-            this.ItemsList = new System.Windows.Forms.ListBox();
-            this.ItemAddButton = new System.Windows.Forms.Button();
-            this.ItemDeleteButton = new System.Windows.Forms.Button();
-            this.ItemName = new System.Windows.Forms.Label();
-            this.ItemNameText = new System.Windows.Forms.TextBox();
-            this.ItemDescriptionText = new System.Windows.Forms.RichTextBox();
-            this.ItemDescription = new System.Windows.Forms.Label();
-            this.ItemScoreLable = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.OpenFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.menuStrip1.SuspendLayout();
             this.MenuTabs.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -123,6 +124,7 @@ namespace Zork_Builder
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openToolStripMenuItem.Text = "&Open...";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
@@ -244,6 +246,7 @@ namespace Zork_Builder
             this.RoomDeleteButton.TabIndex = 13;
             this.RoomDeleteButton.Text = "&Delete";
             this.RoomDeleteButton.UseVisualStyleBackColor = true;
+            this.RoomDeleteButton.Click += new System.EventHandler(this.RoomDeleteButton_Click);
             // 
             // RoomAddButton
             // 
@@ -253,6 +256,7 @@ namespace Zork_Builder
             this.RoomAddButton.TabIndex = 12;
             this.RoomAddButton.Text = "&Add";
             this.RoomAddButton.UseVisualStyleBackColor = true;
+            this.RoomAddButton.Click += new System.EventHandler(this.RoomAddButton_Click);
             // 
             // WestLabel
             // 
@@ -391,6 +395,98 @@ namespace Zork_Builder
             this.tabPage2.Text = "Extras";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(272, 410);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown1.TabIndex = 25;
+            // 
+            // ItemScoreLable
+            // 
+            this.ItemScoreLable.AutoSize = true;
+            this.ItemScoreLable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ItemScoreLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ItemScoreLable.Location = new System.Drawing.Point(215, 410);
+            this.ItemScoreLable.Name = "ItemScoreLable";
+            this.ItemScoreLable.Size = new System.Drawing.Size(51, 19);
+            this.ItemScoreLable.TabIndex = 24;
+            this.ItemScoreLable.Text = "Score:";
+            // 
+            // ItemDescriptionText
+            // 
+            this.ItemDescriptionText.Location = new System.Drawing.Point(215, 282);
+            this.ItemDescriptionText.Name = "ItemDescriptionText";
+            this.ItemDescriptionText.Size = new System.Drawing.Size(312, 108);
+            this.ItemDescriptionText.TabIndex = 23;
+            this.ItemDescriptionText.Text = "";
+            // 
+            // ItemDescription
+            // 
+            this.ItemDescription.AutoSize = true;
+            this.ItemDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ItemDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ItemDescription.Location = new System.Drawing.Point(215, 262);
+            this.ItemDescription.Name = "ItemDescription";
+            this.ItemDescription.Size = new System.Drawing.Size(85, 19);
+            this.ItemDescription.TabIndex = 22;
+            this.ItemDescription.Text = "Description:";
+            // 
+            // ItemNameText
+            // 
+            this.ItemNameText.Location = new System.Drawing.Point(215, 239);
+            this.ItemNameText.Name = "ItemNameText";
+            this.ItemNameText.Size = new System.Drawing.Size(204, 20);
+            this.ItemNameText.TabIndex = 21;
+            // 
+            // ItemName
+            // 
+            this.ItemName.AutoSize = true;
+            this.ItemName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ItemName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ItemName.Location = new System.Drawing.Point(215, 217);
+            this.ItemName.Name = "ItemName";
+            this.ItemName.Size = new System.Drawing.Size(51, 19);
+            this.ItemName.TabIndex = 20;
+            this.ItemName.Text = "Name:";
+            // 
+            // ItemDeleteButton
+            // 
+            this.ItemDeleteButton.Location = new System.Drawing.Point(134, 440);
+            this.ItemDeleteButton.Name = "ItemDeleteButton";
+            this.ItemDeleteButton.Size = new System.Drawing.Size(75, 23);
+            this.ItemDeleteButton.TabIndex = 19;
+            this.ItemDeleteButton.Text = "&Delete";
+            this.ItemDeleteButton.UseVisualStyleBackColor = true;
+            // 
+            // ItemAddButton
+            // 
+            this.ItemAddButton.Location = new System.Drawing.Point(8, 440);
+            this.ItemAddButton.Name = "ItemAddButton";
+            this.ItemAddButton.Size = new System.Drawing.Size(75, 23);
+            this.ItemAddButton.TabIndex = 18;
+            this.ItemAddButton.Text = "&Add";
+            this.ItemAddButton.UseVisualStyleBackColor = true;
+            // 
+            // ItemsList
+            // 
+            this.ItemsList.FormattingEnabled = true;
+            this.ItemsList.Location = new System.Drawing.Point(8, 217);
+            this.ItemsList.Name = "ItemsList";
+            this.ItemsList.Size = new System.Drawing.Size(201, 212);
+            this.ItemsList.TabIndex = 17;
+            // 
+            // ItemLabel
+            // 
+            this.ItemLabel.AutoSize = true;
+            this.ItemLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ItemLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ItemLabel.Location = new System.Drawing.Point(8, 187);
+            this.ItemLabel.Name = "ItemLabel";
+            this.ItemLabel.Size = new System.Drawing.Size(47, 19);
+            this.ItemLabel.TabIndex = 16;
+            this.ItemLabel.Text = "Items:";
+            // 
             // StartingLocationDropDown
             // 
             this.StartingLocationDropDown.FormattingEnabled = true;
@@ -446,97 +542,9 @@ namespace Zork_Builder
             this.StartingLocationLabel.TabIndex = 3;
             this.StartingLocationLabel.Text = "Starting Location:";
             // 
-            // ItemLabel
+            // OpenFileDialog
             // 
-            this.ItemLabel.AutoSize = true;
-            this.ItemLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ItemLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ItemLabel.Location = new System.Drawing.Point(8, 187);
-            this.ItemLabel.Name = "ItemLabel";
-            this.ItemLabel.Size = new System.Drawing.Size(47, 19);
-            this.ItemLabel.TabIndex = 16;
-            this.ItemLabel.Text = "Items:";
-            // 
-            // ItemsList
-            // 
-            this.ItemsList.FormattingEnabled = true;
-            this.ItemsList.Location = new System.Drawing.Point(8, 217);
-            this.ItemsList.Name = "ItemsList";
-            this.ItemsList.Size = new System.Drawing.Size(201, 212);
-            this.ItemsList.TabIndex = 17;
-            // 
-            // ItemAddButton
-            // 
-            this.ItemAddButton.Location = new System.Drawing.Point(8, 440);
-            this.ItemAddButton.Name = "ItemAddButton";
-            this.ItemAddButton.Size = new System.Drawing.Size(75, 23);
-            this.ItemAddButton.TabIndex = 18;
-            this.ItemAddButton.Text = "&Add";
-            this.ItemAddButton.UseVisualStyleBackColor = true;
-            // 
-            // ItemDeleteButton
-            // 
-            this.ItemDeleteButton.Location = new System.Drawing.Point(134, 440);
-            this.ItemDeleteButton.Name = "ItemDeleteButton";
-            this.ItemDeleteButton.Size = new System.Drawing.Size(75, 23);
-            this.ItemDeleteButton.TabIndex = 19;
-            this.ItemDeleteButton.Text = "&Delete";
-            this.ItemDeleteButton.UseVisualStyleBackColor = true;
-            // 
-            // ItemName
-            // 
-            this.ItemName.AutoSize = true;
-            this.ItemName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ItemName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ItemName.Location = new System.Drawing.Point(215, 217);
-            this.ItemName.Name = "ItemName";
-            this.ItemName.Size = new System.Drawing.Size(51, 19);
-            this.ItemName.TabIndex = 20;
-            this.ItemName.Text = "Name:";
-            // 
-            // ItemNameText
-            // 
-            this.ItemNameText.Location = new System.Drawing.Point(215, 239);
-            this.ItemNameText.Name = "ItemNameText";
-            this.ItemNameText.Size = new System.Drawing.Size(204, 20);
-            this.ItemNameText.TabIndex = 21;
-            // 
-            // ItemDescriptionText
-            // 
-            this.ItemDescriptionText.Location = new System.Drawing.Point(215, 282);
-            this.ItemDescriptionText.Name = "ItemDescriptionText";
-            this.ItemDescriptionText.Size = new System.Drawing.Size(312, 108);
-            this.ItemDescriptionText.TabIndex = 23;
-            this.ItemDescriptionText.Text = "";
-            // 
-            // ItemDescription
-            // 
-            this.ItemDescription.AutoSize = true;
-            this.ItemDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ItemDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ItemDescription.Location = new System.Drawing.Point(215, 262);
-            this.ItemDescription.Name = "ItemDescription";
-            this.ItemDescription.Size = new System.Drawing.Size(85, 19);
-            this.ItemDescription.TabIndex = 22;
-            this.ItemDescription.Text = "Description:";
-            // 
-            // ItemScoreLable
-            // 
-            this.ItemScoreLable.AutoSize = true;
-            this.ItemScoreLable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ItemScoreLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ItemScoreLable.Location = new System.Drawing.Point(215, 410);
-            this.ItemScoreLable.Name = "ItemScoreLable";
-            this.ItemScoreLable.Size = new System.Drawing.Size(51, 19);
-            this.ItemScoreLable.TabIndex = 24;
-            this.ItemScoreLable.Text = "Score:";
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(272, 410);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 25;
+            this.OpenFileDialog.Filter = "JSON Files|*.json";
             // 
             // ZorkBuilder
             // 
@@ -612,6 +620,7 @@ namespace Zork_Builder
         private System.Windows.Forms.TextBox ItemNameText;
         private System.Windows.Forms.Label ItemScoreLable;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.OpenFileDialog OpenFileDialog;
     }
 }
 

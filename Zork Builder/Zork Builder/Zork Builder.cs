@@ -17,6 +17,30 @@ namespace Zork_Builder
             InitializeComponent();
         }
 
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(OpenFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                
+            }
+        }
+
+        private void RoomAddButton_Click(object sender, EventArgs e)
+        {
+            using(AddPlayerForm addPlayerForm = new AddPlayerForm())
+            {
+                addPlayerForm.ShowDialog();
+            }
+        }
+
+        private void RoomDeleteButton_Click(object sender, EventArgs e)
+        {
+            using(DeletePlayerForm deletePlayerForm = new DeletePlayerForm())
+            {
+                deletePlayerForm.ShowDialog();
+            }
+        }
+
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();

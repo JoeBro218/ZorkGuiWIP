@@ -55,6 +55,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddPlayerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPlayerForm.Designer.cs">
+      <DependentUpon>AddPlayerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeletePlayerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeletePlayerForm.Designer.cs">
+      <DependentUpon>DeletePlayerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Zork Builder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +75,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddPlayerForm.resx">
+      <DependentUpon>AddPlayerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletePlayerForm.resx">
+      <DependentUpon>DeletePlayerForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Zork Builder.resx">
       <DependentUpon>Zork Builder.cs</DependentUpon>
     </EmbeddedResource>

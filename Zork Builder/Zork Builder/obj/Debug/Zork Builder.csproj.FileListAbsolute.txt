@@ -18,3 +18,19 @@ C:\Users\jo814003\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debu
 C:\Users\jo814003\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork Builder.csproj.CoreCompileInputs.cache
 C:\Users\jo814003\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork Builder.exe
 C:\Users\jo814003\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork Builder.pdb
+C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\bin\Debug\Zork Builder.exe.config
+C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\bin\Debug\Zork Builder.exe
+C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\bin\Debug\Zork Builder.pdb
+C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\bin\Debug\Newtonsoft.Json.dll
+C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\bin\Debug\Newtonsoft.Json.xml
+C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork Builder.csproj.AssemblyReference.cache
+C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork_Builder.ZorkBuilder.resources
+C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork_Builder.Properties.Resources.resources
+C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork Builder.csproj.GenerateResource.cache
+C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork Builder.csproj.CoreCompileInputs.cache
+C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork Builder.csproj.Fody.CopyLocal.cache
+C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork Builder.csproj.CopyComplete
+C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork Builder.exe
+C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork Builder.pdb
+C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork_Builder.AddPlayerForm.resources
+C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork_Builder.DeletePlayerForm.resources
