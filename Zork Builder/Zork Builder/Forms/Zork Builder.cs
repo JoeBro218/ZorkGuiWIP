@@ -55,7 +55,8 @@ namespace Zork_Builder
             };
             _worldDependentMenuItem = new ToolStripMenuItem[]
             {
-                closeWorldToolStripMenuItem
+                closeWorldToolStripMenuItem,
+                saveToolStripMenuItem
             };
 
             IsWorldLoaded = false;
@@ -117,5 +118,10 @@ namespace Zork_Builder
         private WorldViewModel _viewmodel;
         private Control[] _worldDependentControls;
         private ToolStripMenuItem[] _worldDependentMenuItem;
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

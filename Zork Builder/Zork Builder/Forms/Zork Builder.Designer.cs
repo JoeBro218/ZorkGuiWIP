@@ -35,13 +35,13 @@ namespace Zork_Builder
             System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
             System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
             System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
+            System.Windows.Forms.ToolStripMenuItem saveAsToolStripMenuItem;
             System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
             System.Windows.Forms.TabPage roomsTab;
             System.Windows.Forms.Label RoomsLabel;
             System.Windows.Forms.TabPage extrasTab;
             this.closeWorldToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fileSeparatorStripMenuItem = new System.Windows.Forms.ToolStripSeparator();
             this.runToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,13 +56,13 @@ namespace Zork_Builder
             this.SouthLabel = new System.Windows.Forms.Label();
             this.NorthLable = new System.Windows.Forms.Label();
             this.RoomNameText = new System.Windows.Forms.TextBox();
+            this.roomsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.worldViewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.RoomDescriptionText = new System.Windows.Forms.RichTextBox();
             this.roomNeighborsLabel = new System.Windows.Forms.Label();
             this.roomDescriptionLabel = new System.Windows.Forms.Label();
             this.roomNameLabel = new System.Windows.Forms.Label();
             this.RoomsList = new System.Windows.Forms.ListBox();
-            this.roomsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.worldViewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.ItemScoreLable = new System.Windows.Forms.Label();
             this.ItemDescriptionText = new System.Windows.Forms.RichTextBox();
@@ -86,6 +86,7 @@ namespace Zork_Builder
             newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             roomsTab = new System.Windows.Forms.TabPage();
             RoomsLabel = new System.Windows.Forms.Label();
@@ -119,7 +120,7 @@ namespace Zork_Builder
             this.closeWorldToolStripMenuItem,
             toolStripMenuItem2,
             this.saveToolStripMenuItem,
-            this.saveAsToolStripMenuItem,
+            saveAsToolStripMenuItem,
             this.fileSeparatorStripMenuItem,
             exitToolStripMenuItem});
             fileToolStripMenuItem.Name = "fileToolStripMenuItem";
@@ -131,7 +132,7 @@ namespace Zork_Builder
             // 
             newToolStripMenuItem.Name = "newToolStripMenuItem";
             newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            newToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             newToolStripMenuItem.Text = "&New...";
             newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
@@ -139,7 +140,7 @@ namespace Zork_Builder
             // 
             openToolStripMenuItem.Name = "openToolStripMenuItem";
             openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            openToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             openToolStripMenuItem.Text = "&Open...";
             openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
@@ -147,37 +148,38 @@ namespace Zork_Builder
             // 
             this.closeWorldToolStripMenuItem.Enabled = false;
             this.closeWorldToolStripMenuItem.Name = "closeWorldToolStripMenuItem";
-            this.closeWorldToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.closeWorldToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.closeWorldToolStripMenuItem.Text = "Close World";
             // 
             // toolStripMenuItem2
             // 
             toolStripMenuItem2.Name = "toolStripMenuItem2";
-            toolStripMenuItem2.Size = new System.Drawing.Size(152, 6);
+            toolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveToolStripMenuItem.Text = "&Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
-            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
-            this.saveAsToolStripMenuItem.Text = "Save As...";
+            saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
+            saveAsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            saveAsToolStripMenuItem.Text = "Save As...";
             // 
             // fileSeparatorStripMenuItem
             // 
             this.fileSeparatorStripMenuItem.Name = "fileSeparatorStripMenuItem";
-            this.fileSeparatorStripMenuItem.Size = new System.Drawing.Size(152, 6);
+            this.fileSeparatorStripMenuItem.Size = new System.Drawing.Size(177, 6);
             // 
             // exitToolStripMenuItem
             // 
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            exitToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             exitToolStripMenuItem.Text = "E&xit";
             exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -319,11 +321,20 @@ namespace Zork_Builder
             // 
             // RoomNameText
             // 
-            this.RoomNameText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.roomsBindingSource, "Name", true));
+            this.RoomNameText.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.roomsBindingSource, "Name", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.RoomNameText.Location = new System.Drawing.Point(211, 55);
             this.RoomNameText.Name = "RoomNameText";
             this.RoomNameText.Size = new System.Drawing.Size(201, 20);
             this.RoomNameText.TabIndex = 7;
+            // 
+            // roomsBindingSource
+            // 
+            this.roomsBindingSource.DataMember = "Rooms";
+            this.roomsBindingSource.DataSource = this.worldViewModelBindingSource;
+            // 
+            // worldViewModelBindingSource
+            // 
+            this.worldViewModelBindingSource.DataSource = typeof(Zork_Builder.WorldViewModel);
             // 
             // RoomDescriptionText
             // 
@@ -388,15 +399,6 @@ namespace Zork_Builder
             this.RoomsList.Size = new System.Drawing.Size(198, 394);
             this.RoomsList.TabIndex = 0;
             this.RoomsList.ValueMember = "Description";
-            // 
-            // roomsBindingSource
-            // 
-            this.roomsBindingSource.DataMember = "Rooms";
-            this.roomsBindingSource.DataSource = this.worldViewModelBindingSource;
-            // 
-            // worldViewModelBindingSource
-            // 
-            this.worldViewModelBindingSource.DataSource = typeof(Zork_Builder.WorldViewModel);
             // 
             // extrasTab
             // 
@@ -616,7 +618,6 @@ namespace Zork_Builder
         private System.Windows.Forms.ToolStripMenuItem runToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saveAsToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator fileSeparatorStripMenuItem;
         private System.Windows.Forms.TabControl MenuTabs;
         private System.Windows.Forms.Label roomNeighborsLabel;
