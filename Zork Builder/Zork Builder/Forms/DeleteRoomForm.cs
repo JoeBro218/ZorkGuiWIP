@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Zork_Builder
 {
-    public partial class DeletePlayerForm : Form
+    public partial class DeleteRoomForm : Form
     {
-        public DeletePlayerForm()
+        public DeleteRoomForm()
         {
             InitializeComponent();
         }

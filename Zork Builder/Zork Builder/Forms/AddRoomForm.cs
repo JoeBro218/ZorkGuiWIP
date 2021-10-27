@@ -10,9 +10,10 @@ using System.Windows.Forms;
 
 namespace Zork_Builder
 {
-    public partial class AddPlayerForm : Form
+    public partial class AddRoomForm : Form
     {
-        public AddPlayerForm()
+        public string RoomName => nameTextBox.Text;
+        public AddRoomForm()
         {
             InitializeComponent();
         }

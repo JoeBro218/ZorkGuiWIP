@@ -1,7 +1,7 @@
 ﻿
 namespace Zork_Builder
 {
-    partial class AddPlayerForm
+    partial class AddRoomForm
     {
         /// <summary>
         /// Required designer variable.
@@ -32,11 +32,12 @@ namespace Zork_Builder
             this.OkButton = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
             this.NameLableAddPlayer = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.nameTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // OkButton
             // 
+            this.OkButton.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.OkButton.Location = new System.Drawing.Point(150, 51);
             this.OkButton.Name = "OkButton";
             this.OkButton.Size = new System.Drawing.Size(75, 23);
@@ -64,31 +65,31 @@ namespace Zork_Builder
             this.NameLableAddPlayer.TabIndex = 2;
             this.NameLableAddPlayer.Text = "Name";
             // 
-            // textBox1
+            // nameTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 25);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(293, 20);
-            this.textBox1.TabIndex = 3;
+            this.nameTextBox.Location = new System.Drawing.Point(13, 25);
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.Size = new System.Drawing.Size(293, 20);
+            this.nameTextBox.TabIndex = 3;
             // 
-            // AddPlayerForm
+            // AddRoomForm
             // 
             this.AcceptButton = this.OkButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.CancelButton;
             this.ClientSize = new System.Drawing.Size(319, 83);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.NameLableAddPlayer);
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.OkButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "AddPlayerForm";
+            this.Name = "AddRoomForm";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "AddPlayerForm";
+            this.Text = "Add Room";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -99,6 +100,6 @@ namespace Zork_Builder
         private System.Windows.Forms.Button OkButton;
         private System.Windows.Forms.Button CancelButton;
         private System.Windows.Forms.Label NameLableAddPlayer;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox nameTextBox;
     }
 }

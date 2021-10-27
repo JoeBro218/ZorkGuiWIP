@@ -1,7 +1,7 @@
 ﻿
 namespace Zork_Builder
 {
-    partial class DeletePlayerForm
+    partial class DeleteRoomForm
     {
         /// <summary>
         /// Required designer variable.
@@ -64,7 +64,7 @@ namespace Zork_Builder
             this.WARNINGLabel.TabIndex = 4;
             this.WARNINGLabel.Text = "WARNING: Deleting this will perminetly remove this Room.";
             // 
-            // DeletePlayerForm
+            // DeleteRoomForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -75,7 +75,7 @@ namespace Zork_Builder
             this.Controls.Add(this.DeleteCancelButton);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "DeletePlayerForm";
+            this.Name = "DeleteRoomForm";
             this.Text = "DeletePlayerForm";
             this.ResumeLayout(false);
             this.PerformLayout();
