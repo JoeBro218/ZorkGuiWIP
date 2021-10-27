@@ -52,3 +52,20 @@ D:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\bin\Debug\Zork.Common
 D:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\bin\Debug\Zork.Common.pdb
 D:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork_Builder.AddRoomForm.resources
 D:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork_Builder.DeleteRoomForm.resources
+E:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\bin\Debug\Zork Builder.exe.config
+E:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\bin\Debug\Zork Builder.exe
+E:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\bin\Debug\Zork Builder.pdb
+E:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\bin\Debug\Newtonsoft.Json.dll
+E:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\bin\Debug\Zork.Common.dll
+E:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\bin\Debug\Zork.Common.pdb
+E:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\bin\Debug\Newtonsoft.Json.xml
+E:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork Builder.csproj.AssemblyReference.cache
+E:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork_Builder.AddRoomForm.resources
+E:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork_Builder.DeleteRoomForm.resources
+E:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork_Builder.ZorkBuilder.resources
+E:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork_Builder.Properties.Resources.resources
+E:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork Builder.csproj.GenerateResource.cache
+E:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork Builder.csproj.CoreCompileInputs.cache
+E:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork Builder.csproj.Fody.CopyLocal.cache
+E:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork Builder.exe
+E:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork Builder.pdb
