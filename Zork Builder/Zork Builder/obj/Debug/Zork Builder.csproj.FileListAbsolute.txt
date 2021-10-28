@@ -32,8 +32,6 @@ C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Z
 C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork Builder.csproj.CopyComplete
 C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork Builder.exe
 C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork Builder.pdb
-C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork_Builder.AddPlayerForm.resources
-C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork_Builder.DeletePlayerForm.resources
 D:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\bin\Debug\Zork Builder.exe.config
 D:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\bin\Debug\Zork Builder.exe
 D:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\bin\Debug\Zork Builder.pdb
@@ -69,3 +67,7 @@ E:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork Builde
 E:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork Builder.csproj.Fody.CopyLocal.cache
 E:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork Builder.exe
 E:\GithubRepositories\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork Builder.pdb
+C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\bin\Debug\Zork.Common.dll
+C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\bin\Debug\Zork.Common.pdb
+C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork_Builder.AddRoomForm.resources
+C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork_Builder.DeleteRoomForm.resources

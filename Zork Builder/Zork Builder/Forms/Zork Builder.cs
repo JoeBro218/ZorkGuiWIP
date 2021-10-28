@@ -52,6 +52,10 @@ namespace Zork_Builder
             {
                 RoomAddButton,
                 RoomDeleteButton,
+                RoomsListGroupBox,
+                RoomInfoGroupBox,
+                ExtraInfoGroupBox,
+                ItemInfoGroupBox
             };
             _worldDependentMenuItem = new ToolStripMenuItem[]
             {
