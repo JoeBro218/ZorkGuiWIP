@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "GcAGGdCWOhKFF1pp9duDotvEdlscNTcwUypnQrT6JvrzKcxx8/ihOlqWTY6EBfZH7RFdK8xDeFfbzpEGdQ0vkQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lispi\\Documents\\GitHub\\ZorkGuiWIP\\Zork Builder\\Zork.Data\\Zork.Data.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lispi\\.nuget\\packages\\fody\\6.5.1\\fody.6.5.1.nupkg.sha512",
+    "C:\\Users\\lispi\\.nuget\\packages\\propertychanged.fody\\3.4.0\\propertychanged.fody.3.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

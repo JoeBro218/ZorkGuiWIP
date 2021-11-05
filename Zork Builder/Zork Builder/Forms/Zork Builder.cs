@@ -127,5 +127,10 @@ namespace Zork_Builder
         {
 
         }
+
+        private void neighborControl1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

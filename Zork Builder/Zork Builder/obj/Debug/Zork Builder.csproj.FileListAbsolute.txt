@@ -71,4 +71,4 @@ C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\bin\Debug\Z
 C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\bin\Debug\Zork.Common.pdb
 C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork_Builder.AddRoomForm.resources
 C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork_Builder.DeleteRoomForm.resources
-C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork_Builder.UserControls.DirectionUserControl.resources
+C:\Users\lispi\Documents\GitHub\ZorkGuiWIP\Zork Builder\Zork Builder\obj\Debug\Zork_Builder.UserControls.NeighborControl.resources
